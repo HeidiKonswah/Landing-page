@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+  background: #fff;
+  font-family: Oswald;
+  font-weight: 500;
+}
+h1,h2 {
+  color:#222;
+}
+
+p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color:#404040;
+}
+
+header{
+  color:  #222;
+  height: 100vh;
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg");
+ background-size:cover;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  font-weight:bolder;
+}
+
+#sub-text {
+  padding-top:15px;
+}
+
+ul {
+  background-color: #222;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  display:flex;
+  justify-content: space-around;
+}
+
+#container{
+  border: 5px solid #222;
+  padding: 20px;
+  text-align: center;
+  width:50%;
+  min-width: 300px;
+  background-color: rgba(230,230,230,0.2);
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height:10%;
+
+}
+
+li a:hover{
+  text-decoration: none;
+  color:white;
+
+}
+li:hover {
+  background-color: #656d78;
+}
+.active {
+  background-color:#656d78;
+}
+li {
+  padding:10px;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about {
+  display:flex;
+  padding: 15px;
+  marign-top:0;
+  background-color: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pt1 , #pt2 {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+#pt1 {
+  width: 60%;
+}
+#pt2 {
+  width:40%;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+#aboutImg {
+  margin-top: 20px;
+  margin-bottom:20px;
+  width: 100%;
+}
+#aboutHeading {
+ margin-top: 20px;
+}
+
+.gallery {
+  background-color: lavender;
+  padding: 15px;
+  marign-top:0;
+  text-align: center;
+}
+
+#images img {
+  width: 25%;
+  max-height: 200px;
+  margin: 10px;
+  box-shadow:2px 2px 2px #ccc;
+  transition: all ease-out 300ms;
+}
+
+#images img:hover {
+  margin-top: -5px;
+  transform: scale(1.1);
+  box-shadow:4px 4px 4px #aaa;
+}
+#images {
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+}
+#galleryH {
+  text-transform: uppercase;
+  letter-spacing:5px;
+}
+hr {
+  margin-top:20px;
+}
+.gallery p {
+  margin:20px;
+}
+.footer {
+  background-color: #222;
+  padding: 15px;
+  marign-top:0;
+  text-align: center;
+  color: #777;
+  font-size:0.7em;
+}
+.footer p {
+
+}
+@media screen and (min-width:1000px) {
+  #images img {
+  width: 31%;
+  max-height: 300px;
+  margin: 15px;
+}
+
+}
+@media screen and (max-width: 600px){
+ #images img {
+  width: 30%;
+  max-height: 150px;
+  margin: 10px;
+  box-shadow:2px 2px 2px #ccc;
+  transition: all ease-out 300ms;
+}
+  .about {
+  display:flex;
+  flex-direction:column;
+  width: 100%;
+  }
+  #pt1, #pt2 {
+    width:100%;
+    padding:10px;
+    margin-left:0;
+  }
+}
